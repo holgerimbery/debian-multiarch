@@ -28,7 +28,7 @@ after_success:
     - chmod +x manifest-tool
     - ./manifest-tool
     - echo "Pushing manifest $DOCKER_REPO:latest"
-    - ./manifest-tool --username $DOCKER_USERNAME -- password $DOCKER_PASSWORD push from-args \
+    - ./manifest-tool --username $DOCKER_USERNAME --password $DOCKER_PASSWORD push from-args \
       --platforms linux/amd64,linux/386,linux/arm,linux/arm64,linux/ppc64le \
       --template "$DOCKER_REPO:$ARCH-$VERSION" \
       --target "$DOCKER_REPO:latest"
