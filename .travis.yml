@@ -7,11 +7,8 @@ env:
     matrix:
         - ARCH=amd64 INCLUDE=wget QEMU_ARCH=x86_64 SUITE=stretch UNAME_ARCH=x86_64 VERSION=stretch
         - ARCH=arm64 INCLUDE=wget QEMU_ARCH=aarch64 SUITE=stretch UNAME_ARCH=arm64 VERSION=stretch
-        - ARCH=armel INCLUDE=wget QEMU_ARCH=armeb SUITE=stretch UNAME_ARCH=armel VERSION=stretch
         - ARCH=armhf INCLUDE=wget QEMU_ARCH=arm SUITE=stretch UNAME_ARCH=armv7l VERSION=stretch
         - ARCH=i386 INCLUDE=wget QEMU_ARCH=i386 SUITE=stretch UNAME_ARCH=i386 VERSION=stretch
-        - ARCH=mips INCLUDE=wget QEMU_ARCH=mips SUITE=stretch UNAME_ARCH=mips VERSION=stretch
-        - ARCH=mipsel INCLUDE=wget QEMU_ARCH=mipsel SUITE=stretch UNAME_ARCH=mipsel VERSION=stretch
         - ARCH=ppc64el INCLUDE=wget QEMU_ARCH=ppc64 SUITE=stretch UNAME_ARCH=ppc64el VERSION=stretch
         
 
