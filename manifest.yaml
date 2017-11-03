@@ -28,3 +28,8 @@ manifests:
     platform:
       architecture: 386
       os: linux
+  -
+    image: holgerimbery/debian:s390x-stretch
+    platform:
+      architecture: s390x
+      os: linux
