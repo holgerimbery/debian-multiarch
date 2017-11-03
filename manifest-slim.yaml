@@ -1,0 +1,31 @@
+image: holgerimbery/debian:latest-slim
+manifests:
+  -
+    image: holgerimbery/debian:ppc64el-stretch-slim
+    platform:
+      architecture: ppc64le
+      os: linux
+
+  -
+    image: holgerimbery/debian:armhf-stretch-slim
+    platform:
+      architecture: arm
+      os: linux
+
+  -
+    image: holgerimbery/debian:arm64-stretch-slim
+    platform:
+      architecture: arm64
+      os: linux
+
+  -
+    image: holgerimbery/debian:amd64-stretch-slim
+    platform:
+      architecture: amd64
+      os: linux
+
+  -
+    image: holgerimbery/debian:i386-stretch-slim
+    platform:
+      architecture: 386
+      os: linux
