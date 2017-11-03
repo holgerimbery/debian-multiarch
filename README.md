@@ -1,4 +1,4 @@
-![Docker Pulls](https://img.shields.io/docker/pulls/holgerimbery/debian.svg) ![Travis](https://img.shields.io/travis/holgerimbery/debian-multiarch.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/holgerimbery/debian.svg)![Travis](https://img.shields.io/travis/holgerimbery/debian-multiarch.svg)
 ## debian-multiarch docker base image
 debian multiarch docker base image
 
