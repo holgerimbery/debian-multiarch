@@ -13,6 +13,7 @@ env:
         - ARCH=mipsel INCLUDE=wget QEMU_ARCH=mipsel SUITE=stretch UNAME_ARCH=mipsel VERSION=stretch
         - ARCH=i386 INCLUDE=wget QEMU_ARCH=i386 SUITE=stretch UNAME_ARCH=i386 VERSION=stretch
         - ARCH=ppc64el INCLUDE=wget QEMU_ARCH=ppc64 SUITE=stretch UNAME_ARCH=ppc64el VERSION=stretch
+        - ARCH=s390x INCLUDE=wget QEMU_ARCH=s390x SUITE=stretch UNAME_ARCH=s390x VERSION=stretch
         
 
 before_script:
