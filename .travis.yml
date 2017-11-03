@@ -31,3 +31,4 @@ after_success:
     - ./manifest-tool push from-args \
       --platforms linux/amd64,linux/386,linux/arm,linux/arm64, linux/ppc64le \
       --template "$DOCKER_REPO:ARCH-stretch" \
+      --target "$DOCKER_REPO:latest"
