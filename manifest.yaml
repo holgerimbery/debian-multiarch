@@ -14,7 +14,7 @@ manifests:
       os: linux
   
   -
-    image: holgerimbery/debian:armle-stretch
+    image: holgerimbery/debian:armel-stretch
     platform:
       architecture: arm
       variant: v6
@@ -41,4 +41,16 @@ manifests:
     image: holgerimbery/debian:s390x-stretch
     platform:
       architecture: s390x
+      os: linux
+
+  -
+    image: holgerimbery/debian:mips-stretch
+    platform:
+      architecture: mips
+      os: linux
+
+  -
+    image: holgerimbery/debian:mipsel-stretch
+    platform:
+      architecture: mipsle
       os: linux
