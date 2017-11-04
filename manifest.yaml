@@ -24,6 +24,7 @@ manifests:
     image: holgerimbery/debian:arm64-stretch
     platform:
       architecture: arm64
+      variant: v8
       os: linux
 
   -
