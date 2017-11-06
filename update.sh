@@ -3,7 +3,7 @@
 # A POSIX variable
 OPTIND=1 # Reset in case getopts has been used previously in the shell.
 
-while getopts "a:v:q:u:d:s:i:o:" opt; do
+while getopts "a:v:q:u:d:s:i:o:r:" opt; do
     case "$opt" in
     a)  ARCH=$OPTARG
         ;;
@@ -20,6 +20,8 @@ while getopts "a:v:q:u:d:s:i:o:" opt; do
     i)  INCLUDE=$OPTARG
         ;;
     o)  UNAME_ARCH=$OPTARG
+        ;;
+    r)  D_ARCH=$OPTARG
         ;;
     esac
 done
@@ -54,7 +56,7 @@ sed -i /^ENV/d "${dir}/Dockerfile"
 echo "ENV ARCH=${UNAME_ARCH} UBUNTU_SUITE=${SUITE} DOCKER_REPO=${DOCKER_REPO}" >> "${dir}/Dockerfile"
 
 if [ "$DOCKER_REPO" ]; then
-    docker build -t "${DOCKER_REPO}:${ARCH}-${SUITE}-slim" "${dir}"
+    docker build -t "${DOCKER_REPO}:${D_ARCH}-${SUITE}-slim" "${dir}"
     mkdir -p "${dir}/full"
     (
     cd "${dir}/full"
@@ -64,13 +66,13 @@ if [ "$DOCKER_REPO" ]; then
     tar xf x86_64_qemu-*.gz
     )
     cat > "${dir}/full/Dockerfile" <<EOF
-FROM ${DOCKER_REPO}:${ARCH}-${SUITE}-slim
+FROM ${DOCKER_REPO}:${D_ARCH}-${SUITE}-slim
 ADD qemu-*-static /usr/bin/
 EOF
-    docker build -t "${DOCKER_REPO}:${ARCH}-${SUITE}" "${dir}/full"
+    docker build -t "${DOCKER_REPO}:${D_ARCH}-${SUITE}" "${dir}/full"
 fi
 
-docker run -it --rm "${DOCKER_REPO}:${ARCH}-${SUITE}" bash -xc '
+docker run -it --rm "${DOCKER_REPO}:${D_ARCH}-${SUITE}" bash -xc '
     uname -a
     echo
     cat /etc/apt/sources.list
