@@ -1,27 +1,27 @@
 image: holgerimbery/debian:latest
 manifests:
   -
-    image: holgerimbery/debian:ppc64el-stretch
+    image: holgerimbery/debian:ppc64le-stretch
     platform:
       architecture: ppc64le
       os: linux
 
   -
-    image: holgerimbery/debian:armhf-stretch
+    image: holgerimbery/debian:arm32v7-stretch
     platform:
       architecture: arm
       variant: v7
       os: linux
   
   -
-    image: holgerimbery/debian:armel-stretch
+    image: holgerimbery/debian:arm32v6-stretch
     platform:
       architecture: arm
       variant: v6
       os: linux
       
   -
-    image: holgerimbery/debian:arm64-stretch
+    image: holgerimbery/debian:arm64v8-stretch
     platform:
       architecture: arm64
       variant: v8
