@@ -15,7 +15,7 @@ docker pull holgerimbery/debian:latest-slim
 ```
 
 # arch
-amd64, i386, arm64, armhf, ppc64el, s390x
+amd64, i386, arm64, arm32v7, arm32v6, ppc64le, s390x
 
 
 # credits
