@@ -1,45 +1,45 @@
-image: holgerimbery/debian:jessie-slim
+image: holgerimbery/debian:latest-slim
 manifests:
   -
-    image: holgerimbery/debian:ppc64le-jessie-slim
+    image: holgerimbery/debian:ppc64le-stretch-slim
     platform:
       architecture: ppc64le
       os: linux
 
   -
-    image: holgerimbery/debian:arm32v7-jessie-slim
+    image: holgerimbery/debian:arm32v7-stretch-slim
     platform:
       architecture: arm
       variant: v7
       os: linux
   
   -
-    image: holgerimbery/debian:arm32v6-jessie-slim
+    image: holgerimbery/debian:arm32v6-stretch-slim
     platform:
       architecture: arm
       variant: v6
       os: linux
       
   -
-    image: holgerimbery/debian:arm64v8-jessie-slim
+    image: holgerimbery/debian:arm64v8-stretch-slim
     platform:
       architecture: arm64
       variant: v8
       os: linux
 
   -
-    image: holgerimbery/debian:amd64-jessie-slim
+    image: holgerimbery/debian:amd64-stretch-slim
     platform:
       architecture: amd64
       os: linux
 
   -
-    image: holgerimbery/debian:i386-jessie-slim
+    image: holgerimbery/debian:i386-stretch-slim
     platform:
       architecture: 386
       os: linux
   -
-    image: holgerimbery/debian:s390x-jessie-slim
+    image: holgerimbery/debian:s390x-stretch-slim
     platform:
       architecture: s390x
       os: linux
