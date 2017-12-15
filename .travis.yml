@@ -12,6 +12,13 @@ env:
         - ARCH=i386 INCLUDE=wget QEMU_ARCH=i386 SUITE=stretch UNAME_ARCH=i386 VERSION=stretch D_ARCH=i386
         - ARCH=ppc64el INCLUDE=wget QEMU_ARCH=ppc64 SUITE=stretch UNAME_ARCH=ppc64el VERSION=stretch D_ARCH=ppc64le
         - ARCH=s390x INCLUDE=wget QEMU_ARCH=s390x SUITE=stretch UNAME_ARCH=s390x VERSION=stretch D_ARCH=s390x
+        - ARCH=amd64 INCLUDE=wget QEMU_ARCH=x86_64 SUITE=jessie UNAME_ARCH=x86_64 VERSION=stretch D_ARCH=amd64
+        - ARCH=arm64 INCLUDE=wget QEMU_ARCH=aarch64 SUITE=jessie UNAME_ARCH=arm64 VERSION=stretch D_ARCH=arm64v8
+        - ARCH=armel INCLUDE=wget QEMU_ARCH=armeb SUITE=jessie UNAME_ARCH=armel VERSION=stretch D_ARCH=arm32v6
+        - ARCH=armhf INCLUDE=wget QEMU_ARCH=arm SUITE=jessie UNAME_ARCH=armv7l VERSION=stretch D_ARCH=arm32v7
+        - ARCH=i386 INCLUDE=wget QEMU_ARCH=i386 SUITE=jessie UNAME_ARCH=i386 VERSION=stretch D_ARCH=i386
+        - ARCH=ppc64el INCLUDE=wget QEMU_ARCH=ppc64 SUITE=jessie UNAME_ARCH=ppc64el VERSION=stretch D_ARCH=ppc64le
+        - ARCH=s390x INCLUDE=wget QEMU_ARCH=s390x SUITE=jessie UNAME_ARCH=s390x VERSION=stretch D_ARCH=s390x
         
 
 before_script:
