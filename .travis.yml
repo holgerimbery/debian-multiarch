@@ -3,7 +3,7 @@ services: docker
 language: bash
 env:
     global:
-        - QEMU_VER=v2.9.1
+        - QEMU_VER=v2.9.1-1
     matrix:
         - ARCH=amd64 INCLUDE=wget QEMU_ARCH=x86_64 SUITE=stretch UNAME_ARCH=x86_64 VERSION=stretch D_ARCH=amd64
         - ARCH=arm64 INCLUDE=wget QEMU_ARCH=aarch64 SUITE=stretch UNAME_ARCH=arm64 VERSION=stretch D_ARCH=arm64v8
